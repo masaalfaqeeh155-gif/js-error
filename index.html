@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+
+<form name="bookMarkform">
+
+  <div class="mb-3">
+    <label for="siteName" class="form-label">Site Name</label>
+    <input type="text" name="name" class="form-control" id="siteName">
+  </div>
+
+  <div class="mb-3">
+    <label for="siteUrl" class="form-label">Site Url</label>
+    <input type="url" name="url" class="form-control" id="siteUrl">
+  </div>
+
+  <div class="mb-3">
+    <label for="siteEmail" class="form-label">Site Email</label>
+    <input type="email" name="email" class="form-control" id="siteEmail">
+  </div>
+
+  <div class="mb-3">
+    <label for="sitePassword" class="form-label">Site Password</label>
+    <input type="password" name="password" class="form-control" id="sitePassword">
+  </div>
+
+  <button type="submit" class="btn btn-primary">Add</button>
+</form>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">index</th>
+      <th scope="col">Name</th>
+      <th scope="col">Url</th>
+      <th scope="col">Email</th>
+      <th scope="col">Password</th>
+      <th scope="col">Action</th>
+    </tr>
+  </thead>
+  <tbody class="data">
+
+  </tbody>
+</table>
+
+<script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="./node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>
+<script src="./node_modules/just-validate/dist/just-validate.production.min.js"></script>
+
+<script src="./main.js"></script>
+</body>
+</html>
